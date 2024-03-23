@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/Sunset_Chat.css">
+  <!-- Définition de l'icône de la page -->
+  <link rel="icon" href="logo.png">
+  <title>Sunset Chat</title>
+</head>
+<body>
+  <div class="chat-container">
+    <!-- Début de l'en-tête -->
+    <header class="chat-header">
+      <h1><img src="logo.png" alt="logo" id="logo"> Sunset Chat</h1>
+    </header>
+    <!-- Fin de l'en-tête -->
+
+    <!-- Début de la barre latérale -->
+    <main class="chat-main">
+      <div class="chat-sidebar">
+        <!-- Champs d'entrée pour l'émetteur et le récepteur -->
+        <input id="from" type="text" placeholder="Entrer L'emetteur ..." required/>
+        <input id="to" type="text" placeholder="Entrer Le recepteur ..." required/><br><br>
+        <!-- Bouton pour confirmer les détails -->
+        <button class="btn2" onclick="storeDetails()"><i class="fas fa-paper-plane"></i> confirmer </button>
+      </div>
+      <!-- Conteneur pour afficher les messages -->
+      <div class="chat-messages">
+        <div class="message"></div>
+      </div>
+    </main>
+    <!-- Fin de la barre latérale -->
+
+    <!-- Formulaire pour envoyer des messages -->
+    <div class="chat-form-container">
+      <form id="chat-form">
+        <input id="msg" type="text" placeholder="Enter Message..." required autocomplete="off"/>
+        <button class="btn"><i class="fas fa-paper-plane"></i> Envoyer</button>
+      </form>
+    </div>
+  </div>
+  <!-- Message de bienvenue -->
+  <h1 class="message-final"><b>Welcome To Sunset Chat</b></h1>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js" integrity="sha256-ijqLssetA1NMNjZ+w1zaUafQQLm4IW5OoM8O+4tatME=" crossorigin="anonymous">
+  </script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/Sunset_Chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "sunset-chat",
+  "version": "1.0.0",
+  "description": "Mini-Projet 1 : Application de chat temps réel « multi-rooms » Socket.io, Express.js, MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "author": "Ilyass Hakim",
+  "dependencies": {
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.26.0",
+    "mongodb": "^3.5.9",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
