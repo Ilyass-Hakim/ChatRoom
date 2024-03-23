@@ -29,11 +29,13 @@ Pour tester l'application localement, suivez ces etapes :
 
 1. Clonez ce depot sur votre machine en utilisant la commande suivante dans votre terminal : $ git clone https://github.com/Ilyass-Hakim/ChatRoom.git
 
-2. Accedez au repertoire du projet : $ cd //
+2. Accedez au repertoire du projet : $ cd chatroom
 
 3. Installez les dependances avec la commande : $ npm install
 
 4. Demarrez le serveur avec la commande : $ node server.js
 
-5. Une fois le serveur demarre, ouvrez votre navigateur et accedez a l'application a l'adresse suivante : http://localhost:5000/Sunset_Chat.html
+5. Une fois le serveur demarre, ouvrez votre navigateur et accedez a l'application a l'adresse suivante : http://localhost:1000/Sunset_Chat.html
+
+
 
